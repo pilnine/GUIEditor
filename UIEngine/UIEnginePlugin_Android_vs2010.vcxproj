@@ -1,0 +1,187 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|hkAndroid">
+      <Configuration>Debug</Configuration>
+      <Platform>hkAndroid</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Dev|hkAndroid">
+      <Configuration>Dev</Configuration>
+      <Platform>hkAndroid</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|hkAndroid">
+      <Configuration>Release</Configuration>
+      <Platform>hkAndroid</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Source\UIEngineCallbacks.cpp" />
+    <ClCompile Include="Source\UIEnginePlugin.cpp" />
+    <ClCompile Include="Source\UIEnginePluginPCH.cpp" />
+    <ClCompile Include="Source\UIEventHandlerComponent.cpp" />
+    <ClCompile Include="Source\vCommonControls.cpp" />
+    <ClCompile Include="Source\VDefaultGUIContext.cpp" />
+    <ClCompile Include="Source\VDynamicGUIContext.cpp" />
+    <ClCompile Include="Source\VUINode.cpp" />
+    <ClCompile Include="Source\VUINodeCheckBox.cpp" />
+    <ClCompile Include="Source\VUINodeColorButton.cpp" />
+    <ClCompile Include="Source\VUINodeDialog.cpp" />
+    <ClCompile Include="Source\VUINodeDraggingButton.cpp" />
+    <ClCompile Include="Source\VUINodeExportHelperXML.cpp" />
+    <ClCompile Include="Source\VUINodeImage.cpp" />
+    <ClCompile Include="Source\VUINodeList.cpp" />
+    <ClCompile Include="Source\VUINodeListItem.cpp" />
+    <ClCompile Include="Source\VUINodeModelPreviewControl.cpp" />
+    <ClCompile Include="Source\VUINodeNumericUpDown.cpp" />
+    <ClCompile Include="Source\VUINodePieGraph.cpp" />
+    <ClCompile Include="Source\VUINodePushButton.cpp" />
+    <ClCompile Include="Source\VUINodeRotator.cpp" />
+    <ClCompile Include="Source\VUINodeSliderControl.cpp" />
+    <ClCompile Include="Source\VUINodeStyleButton.cpp" />
+    <ClCompile Include="Source\VUINodeTextInput.cpp" />
+    <ClCompile Include="Source\VUINodeTextLabel.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Source\UIEngineCallbacks.h" />
+    <ClInclude Include="Source\UIEngineIncludes.hpp" />
+    <ClInclude Include="Source\UIEnginePluginPCH.h" />
+    <ClInclude Include="Source\UIEventHandlerComponent.h" />
+    <ClInclude Include="Source\vCommonControls.hpp" />
+    <ClInclude Include="Source\VDefaultGUIContext.hpp" />
+    <ClInclude Include="Source\VDynamicGUIContext.hpp" />
+    <ClInclude Include="Source\VUINode.hpp" />
+    <ClInclude Include="Source\VUINodeCheckBox.h" />
+    <ClInclude Include="Source\VUINodeColorButton.h" />
+    <ClInclude Include="Source\VUINodeDialog.h" />
+    <ClInclude Include="Source\VUINodeDraggingButton.h" />
+    <ClInclude Include="Source\VUINodeExportHelperXML.h" />
+    <ClInclude Include="Source\VUINodeImage.h" />
+    <ClInclude Include="Source\VUINodeList.h" />
+    <ClInclude Include="Source\VUINodeListItem.h" />
+    <ClInclude Include="Source\VUINodeModelPreviewControl.h" />
+    <ClInclude Include="Source\VUINodeNumericUpDown.h" />
+    <ClInclude Include="Source\VUINodePieGraph.h" />
+    <ClInclude Include="Source\VUINodePieGraph.hpp" />
+    <ClInclude Include="Source\VUINodePushButton.h" />
+    <ClInclude Include="Source\VUINodeRotator.h" />
+    <ClInclude Include="Source\VUINodeSliderControl.h" />
+    <ClInclude Include="Source\VUINodeStyleButton.h" />
+    <ClInclude Include="Source\VUINodeTextInput.h" />
+    <ClInclude Include="Source\VUINodeTextLabel.h" />
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{AB6D0357-98F8-4F93-9774-439B783F8660}</ProjectGuid>
+    <RootNamespace>
+    </RootNamespace>
+    <ProjectName>UIEnginePlugin</ProjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Label="Configuration" Condition="'$(Configuration)|$(Platform)'=='Debug|hkAndroid'">
+    <PlatformToolset>arm-linux-androideabi-4.6</PlatformToolset>
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+  </PropertyGroup>
+  <PropertyGroup Label="Configuration" Condition="'$(Configuration)|$(Platform)'=='Dev|hkAndroid'">
+    <PlatformToolset>arm-linux-androideabi-4.6</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Label="Configuration" Condition="'$(Configuration)|$(Platform)'=='Dev|hkAndroid'">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+  </PropertyGroup>
+  <PropertyGroup Label="Configuration" Condition="'$(Configuration)|$(Platform)'=='Release|hkAndroid'">
+    <PlatformToolset>arm-linux-androideabi-4.6</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Label="Configuration" Condition="'$(Configuration)|$(Platform)'=='Release|hkAndroid'">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|hkAndroid'">
+    <Import Project="$(VISION_SDK)\Build\Vision\PropertySheets\EnginePlugin_android_arm_vs2010_anarchyDebug.props" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Dev|hkAndroid'">
+    <Import Project="$(VISION_SDK)\Build\Vision\PropertySheets\EnginePlugin_android_arm_vs2010_anarchyDev.props" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|hkAndroid'">
+    <Import Project="$(VISION_SDK)\Build\Vision\PropertySheets\EnginePlugin_android_arm_vs2010_anarchyRelease.props" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|hkAndroid'">
+    <OutDir>..\..\Lib\android_arm_vs2010_anarchy\$(Configuration)\</OutDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|hkAndroid'">
+    <IntDir>..\..\Obj\android_arm_vs2010_anarchy\$(Configuration)\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|hkAndroid'">
+    <TargetName>libUIEnginePlugin</TargetName>
+    <TargetExt>.a</TargetExt>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|hkAndroid'">
+    <OutDir>..\..\Lib\android_arm_vs2010_anarchy\$(Configuration)\</OutDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|hkAndroid'">
+    <IntDir>..\..\Obj\android_arm_vs2010_anarchy\$(Configuration)\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|hkAndroid'">
+    <TargetName>libUIEnginePlugin</TargetName>
+    <TargetExt>.a</TargetExt>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Dev|hkAndroid'">
+    <OutDir>..\..\Lib\android_arm_vs2010_anarchy\$(Configuration)\</OutDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Dev|hkAndroid'">
+    <IntDir>..\..\Obj\android_arm_vs2010_anarchy\$(Configuration)\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Dev|hkAndroid'">
+    <TargetName>libUIEnginePlugin</TargetName>
+    <TargetExt>.a</TargetExt>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|hkAndroid'">
+    <ClCompile>
+      <PrecompiledHeader>Yes</PrecompiledHeader>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|hkAndroid'">
+    <ClCompile>
+      <PrecompiledHeaderFile>UIEnginePluginPCH.h</PrecompiledHeaderFile>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|hkAndroid'">
+    <ClCompile>
+      <PrecompiledHeaderOutputFile>$(IntDir)UIEnginePluginPCH.pch</PrecompiledHeaderOutputFile>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Dev|hkAndroid'">
+    <ClCompile>
+      <PrecompiledHeader>Yes</PrecompiledHeader>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Dev|hkAndroid'">
+    <ClCompile>
+      <PrecompiledHeaderFile>UIEnginePluginPCH.h</PrecompiledHeaderFile>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Dev|hkAndroid'">
+    <ClCompile>
+      <PrecompiledHeaderOutputFile>$(IntDir)UIEnginePluginPCH.pch</PrecompiledHeaderOutputFile>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|hkAndroid'">
+    <ClCompile />
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|hkAndroid'">
+    <ClCompile>
+      <PrecompiledHeaderFile>UIEnginePluginPCH.h</PrecompiledHeaderFile>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|hkAndroid'">
+    <ClCompile>
+      <PrecompiledHeaderOutputFile>$(IntDir)UIEnginePluginPCH.pch</PrecompiledHeaderOutputFile>
+    </ClCompile>
+    <Lib>
+      <AdditionalDependencies>-lVisionEnginePlugin</AdditionalDependencies>
+    </Lib>
+  </ItemDefinitionGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

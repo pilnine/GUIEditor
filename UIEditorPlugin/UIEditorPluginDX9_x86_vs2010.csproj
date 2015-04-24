@@ -1,0 +1,198 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <!--
+    VARIANT = "DX9"
+    
+    
+    SOURCE_LEVEL = "PUBLIC"
+    REQUIRED_HAVOK_PRODUCTS = "VISION"
+  -->
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Dev</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.50727</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{66D625DB-C5A0-4A81-9143-6C0A881BF082}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>UIEditorPlugin</RootNamespace>
+    <AssemblyName>UIEditorPlugin.EditorPlugin</AssemblyName>
+    <ApplicationIcon>
+    </ApplicationIcon>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <PlatformToolset>v100</PlatformToolset>
+    <ResolveAssemblyWarnOrErrorOnTargetArchitectureMismatch>None</ResolveAssemblyWarnOrErrorOnTargetArchitectureMismatch>
+  </PropertyGroup>
+  <PropertyGroup>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug DLL|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>$(VISION_SDK)\Bin\win32_vs2010\debug_dll\DX9</OutputPath>
+    <OutDir>$(VISION_SDK)\Bin\win32_vs2010\debug_dll\DX9</OutDir>
+    <IntermediateOutputPath>Obj\win32_vs2010\debug_dll</IntermediateOutputPath>
+    <DefineConstants>_WINDOWS;WIN32;_WIN32;_DEBUG;HK_DEBUG;HK_DEBUG_SLOW;_CONSOLE;_ALLOW_ITERATOR_DEBUG_LEVEL_MISMATCH;HK_ANARCHY; TRACE; DEBUG</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>4</WarningLevel>
+    <NoWarn>
+    </NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Dev DLL|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>$(VISION_SDK)\Bin\win32_vs2010\dev_dll\DX9</OutputPath>
+    <OutDir>$(VISION_SDK)\Bin\win32_vs2010\dev_dll\DX9</OutDir>
+    <IntermediateOutputPath>Obj\win32_vs2010\dev_dll</IntermediateOutputPath>
+    <DefineConstants>_WINDOWS;WIN32;_WIN32;HK_DEBUG;_CONSOLE;_ALLOW_ITERATOR_DEBUG_LEVEL_MISMATCH;HK_ANARCHY; TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>4</WarningLevel>
+    <NoWarn>
+    </NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release DLL|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+    <DebugSymbols>false</DebugSymbols>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>$(VISION_SDK)\Bin\win32_vs2010\release_dll\DX9</OutputPath>
+    <OutDir>$(VISION_SDK)\Bin\win32_vs2010\release_dll\DX9</OutDir>
+    <IntermediateOutputPath>Obj\win32_vs2010\release_dll</IntermediateOutputPath>
+    <DefineConstants>_WINDOWS;WIN32;_WIN32;NDEBUG;_CONSOLE;_ALLOW_ITERATOR_DEBUG_LEVEL_MISMATCH;HK_ANARCHY; TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>4</WarningLevel>
+    <NoWarn>
+    </NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>false</SignAssembly>
+    <AssemblyOriginatorKeyFile>
+    </AssemblyOriginatorKeyFile>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="PluginClasses\ExpandedDynamicPropertyConverter.cs" />
+    <Compile Include="PluginClasses\GUIContextShape.cs" />
+    <Compile Include="PluginClasses\UIShapeCheckBox.cs" />
+    <Compile Include="PluginClasses\UIShapeImage.cs" />
+    <Compile Include="PluginClasses\UIShapeListControl.cs" />
+    <Compile Include="PluginClasses\UIShapePushButton.cs" />
+    <Compile Include="Panels\UIToolbarPanel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Panels\UIToolbarPanel.Designer.cs">
+      <DependentUpon>UIToolbarPanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PluginClasses\UIShapeDialog.cs" />
+    <Compile Include="PluginClasses\DragAndDropPanelEntry.cs">
+      <DeploymentContent>False</DeploymentContent>
+    </Compile>
+    <Compile Include="EditorPlugin.cs">
+      <DeploymentContent>False</DeploymentContent>
+    </Compile>
+    <Compile Include="PluginClasses\StaticMeshShapeCreator.cs">
+      <DeploymentContent>False</DeploymentContent>
+    </Compile>
+    <Compile Include="PluginClasses\UIShapeSliderControl.cs" />
+    <Compile Include="PluginClasses\UIShapeTextInput.cs" />
+    <Compile Include="PluginClasses\UIShapeTextLabel.cs" />
+    <Compile Include="UIEditorMouseContext.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs">
+      <DeploymentContent>False</DeploymentContent>
+    </Compile>
+    <Compile Include="PluginClasses\ModelShapeCreator.cs">
+      <DeploymentContent>False</DeploymentContent>
+    </Compile>
+    <Compile Include="PluginClasses\UIShapeBase.cs" />
+    <Compile Include="PropertyImageState.cs" />
+    <Compile Include="PropertyTextState.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="System">
+      <HintPath>$(OutputPath)</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Core">
+      <HintPath>$(OutputPath)</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Design" />
+    <Reference Include="System.Drawing">
+      <HintPath>$(OutputPath)</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Drawing.Design" />
+    <Reference Include="System.Windows.Forms">
+      <HintPath>$(OutputPath)</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Xml.Linq">
+      <HintPath>$(OutputPath)</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <HintPath>$(OutputPath)</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Data">
+      <HintPath>$(OutputPath)</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Xml">
+      <HintPath>$(OutputPath)</HintPath>
+      <Private>False</Private>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="CSharpFramework.dll">
+      <HintPath>$(VISION_SDK)\Bin\win32_vs2010\release_dll\DX9\CSharpFramework.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DockPanel.dll">
+      <HintPath>$(VISION_SDK)\Bin\win32_vs2010\release_dll\DX9\DockPanel.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="ManagedBase.dll">
+      <HintPath>$(VISION_SDK)\Bin\win32_vs2010\release_dll\DX9\ManagedBase.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="ManagedFramework.dll">
+      <HintPath>$(VISION_SDK)\Bin\win32_vs2010\release_dll\DX9\ManagedFramework.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="VisionEditorPlugin.EditorPlugin.dll">
+      <HintPath>$(VISION_SDK)\Bin\win32_vs2010\release_dll\DX9\VisionEditorPlugin.EditorPlugin.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include=" " />
+    <EmbeddedResource Include="Icons\Button.png" />
+    <EmbeddedResource Include="Icons\Checkbox.png" />
+    <EmbeddedResource Include="Icons\ComboBox.png" />
+    <EmbeddedResource Include="Icons\Dialog.png" />
+    <EmbeddedResource Include="Icons\Image.png" />
+    <EmbeddedResource Include="Icons\ListBox.png" />
+    <EmbeddedResource Include="Icons\Text.png" />
+    <EmbeddedResource Include="Icons\TextBox.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\UIEditorManaged\UIEditorManagedDX9_win32_vs2010.vcxproj">
+      <Project>{AB8D77AF-73B9-4F8D-9D34-4EC0568AA10E}</Project>
+      <Name>UIEditorManagedDX9_x86_vs2010</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PostBuildEvent>
+    </PostBuildEvent>
+  </PropertyGroup>
+</Project>
