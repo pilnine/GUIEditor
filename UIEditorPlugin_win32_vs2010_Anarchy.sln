@@ -1,0 +1,93 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "UIEngineDX9_x86_vs2010", "Source\UIEngine\UIEnginePluginDX9_win32_vs2010_anarchy.vcxproj", "{AAD74F01-3FEB-4EB9-8E14-4C1A7874A99E}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "UIEditorManagedDX9_x86_vs2010_anarchy", "Source\UIEditorManaged\UIEditorManagedDX9_win32_vs2010_anarchy.vcxproj", "{AB8D77AF-73B9-4F8D-9D34-4EC0568AA10E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UIEditorPluginDX9_x86_vs2010_anarchy", "Source\UIEditorPlugin\UIEditorPluginDX9_x86_vs2010_anarchy.csproj", "{66D625DB-C5A0-4A81-9143-6C0A881BF082}"
+	ProjectSection(ProjectDependencies) = postProject
+		{AAD74F01-3FEB-4EB9-8E14-4C1A7874A99E} = {AAD74F01-3FEB-4EB9-8E14-4C1A7874A99E}
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Mixed Platforms = Debug|Mixed Platforms
+		Debug|win32 = Debug|win32
+		Debug|x86 = Debug|x86
+		Dev|Mixed Platforms = Dev|Mixed Platforms
+		Dev|win32 = Dev|win32
+		Dev|x86 = Dev|x86
+		Hybrid DLL|Mixed Platforms = Hybrid DLL|Mixed Platforms
+		Hybrid DLL|win32 = Hybrid DLL|win32
+		Hybrid DLL|x86 = Hybrid DLL|x86
+		Release|Mixed Platforms = Release|Mixed Platforms
+		Release|win32 = Release|win32
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{AAD74F01-3FEB-4EB9-8E14-4C1A7874A99E}.Debug|Mixed Platforms.ActiveCfg = Debug|win32
+		{AAD74F01-3FEB-4EB9-8E14-4C1A7874A99E}.Debug|Mixed Platforms.Build.0 = Debug|win32
+		{AAD74F01-3FEB-4EB9-8E14-4C1A7874A99E}.Debug|win32.ActiveCfg = Debug|win32
+		{AAD74F01-3FEB-4EB9-8E14-4C1A7874A99E}.Debug|win32.Build.0 = Debug|win32
+		{AAD74F01-3FEB-4EB9-8E14-4C1A7874A99E}.Debug|x86.ActiveCfg = Debug|win32
+		{AAD74F01-3FEB-4EB9-8E14-4C1A7874A99E}.Dev|Mixed Platforms.ActiveCfg = Dev|win32
+		{AAD74F01-3FEB-4EB9-8E14-4C1A7874A99E}.Dev|Mixed Platforms.Build.0 = Dev|win32
+		{AAD74F01-3FEB-4EB9-8E14-4C1A7874A99E}.Dev|win32.ActiveCfg = Dev|win32
+		{AAD74F01-3FEB-4EB9-8E14-4C1A7874A99E}.Dev|win32.Build.0 = Dev|win32
+		{AAD74F01-3FEB-4EB9-8E14-4C1A7874A99E}.Dev|x86.ActiveCfg = Dev|win32
+		{AAD74F01-3FEB-4EB9-8E14-4C1A7874A99E}.Hybrid DLL|Mixed Platforms.ActiveCfg = Release|win32
+		{AAD74F01-3FEB-4EB9-8E14-4C1A7874A99E}.Hybrid DLL|Mixed Platforms.Build.0 = Release|win32
+		{AAD74F01-3FEB-4EB9-8E14-4C1A7874A99E}.Hybrid DLL|win32.ActiveCfg = Release|win32
+		{AAD74F01-3FEB-4EB9-8E14-4C1A7874A99E}.Hybrid DLL|win32.Build.0 = Release|win32
+		{AAD74F01-3FEB-4EB9-8E14-4C1A7874A99E}.Hybrid DLL|x86.ActiveCfg = Release|win32
+		{AAD74F01-3FEB-4EB9-8E14-4C1A7874A99E}.Release|Mixed Platforms.ActiveCfg = Release|win32
+		{AAD74F01-3FEB-4EB9-8E14-4C1A7874A99E}.Release|Mixed Platforms.Build.0 = Release|win32
+		{AAD74F01-3FEB-4EB9-8E14-4C1A7874A99E}.Release|win32.ActiveCfg = Release|win32
+		{AAD74F01-3FEB-4EB9-8E14-4C1A7874A99E}.Release|win32.Build.0 = Release|win32
+		{AAD74F01-3FEB-4EB9-8E14-4C1A7874A99E}.Release|x86.ActiveCfg = Release|win32
+		{AB8D77AF-73B9-4F8D-9D34-4EC0568AA10E}.Debug|Mixed Platforms.ActiveCfg = Debug|win32
+		{AB8D77AF-73B9-4F8D-9D34-4EC0568AA10E}.Debug|Mixed Platforms.Build.0 = Debug|win32
+		{AB8D77AF-73B9-4F8D-9D34-4EC0568AA10E}.Debug|win32.ActiveCfg = Debug|win32
+		{AB8D77AF-73B9-4F8D-9D34-4EC0568AA10E}.Debug|win32.Build.0 = Debug|win32
+		{AB8D77AF-73B9-4F8D-9D34-4EC0568AA10E}.Debug|x86.ActiveCfg = Debug|win32
+		{AB8D77AF-73B9-4F8D-9D34-4EC0568AA10E}.Dev|Mixed Platforms.ActiveCfg = Dev|win32
+		{AB8D77AF-73B9-4F8D-9D34-4EC0568AA10E}.Dev|Mixed Platforms.Build.0 = Dev|win32
+		{AB8D77AF-73B9-4F8D-9D34-4EC0568AA10E}.Dev|win32.ActiveCfg = Dev|win32
+		{AB8D77AF-73B9-4F8D-9D34-4EC0568AA10E}.Dev|win32.Build.0 = Dev|win32
+		{AB8D77AF-73B9-4F8D-9D34-4EC0568AA10E}.Dev|x86.ActiveCfg = Dev|win32
+		{AB8D77AF-73B9-4F8D-9D34-4EC0568AA10E}.Hybrid DLL|Mixed Platforms.ActiveCfg = Release|win32
+		{AB8D77AF-73B9-4F8D-9D34-4EC0568AA10E}.Hybrid DLL|Mixed Platforms.Build.0 = Release|win32
+		{AB8D77AF-73B9-4F8D-9D34-4EC0568AA10E}.Hybrid DLL|win32.ActiveCfg = Release|win32
+		{AB8D77AF-73B9-4F8D-9D34-4EC0568AA10E}.Hybrid DLL|win32.Build.0 = Release|win32
+		{AB8D77AF-73B9-4F8D-9D34-4EC0568AA10E}.Hybrid DLL|x86.ActiveCfg = Release|win32
+		{AB8D77AF-73B9-4F8D-9D34-4EC0568AA10E}.Release|Mixed Platforms.ActiveCfg = Release|win32
+		{AB8D77AF-73B9-4F8D-9D34-4EC0568AA10E}.Release|Mixed Platforms.Build.0 = Release|win32
+		{AB8D77AF-73B9-4F8D-9D34-4EC0568AA10E}.Release|win32.ActiveCfg = Release|win32
+		{AB8D77AF-73B9-4F8D-9D34-4EC0568AA10E}.Release|win32.Build.0 = Release|win32
+		{AB8D77AF-73B9-4F8D-9D34-4EC0568AA10E}.Release|x86.ActiveCfg = Release|win32
+		{66D625DB-C5A0-4A81-9143-6C0A881BF082}.Debug|Mixed Platforms.ActiveCfg = Debug|x86
+		{66D625DB-C5A0-4A81-9143-6C0A881BF082}.Debug|Mixed Platforms.Build.0 = Debug|x86
+		{66D625DB-C5A0-4A81-9143-6C0A881BF082}.Debug|win32.ActiveCfg = Debug|x86
+		{66D625DB-C5A0-4A81-9143-6C0A881BF082}.Debug|x86.ActiveCfg = Debug|x86
+		{66D625DB-C5A0-4A81-9143-6C0A881BF082}.Debug|x86.Build.0 = Debug|x86
+		{66D625DB-C5A0-4A81-9143-6C0A881BF082}.Dev|Mixed Platforms.ActiveCfg = Dev|x86
+		{66D625DB-C5A0-4A81-9143-6C0A881BF082}.Dev|Mixed Platforms.Build.0 = Dev|x86
+		{66D625DB-C5A0-4A81-9143-6C0A881BF082}.Dev|win32.ActiveCfg = Dev|x86
+		{66D625DB-C5A0-4A81-9143-6C0A881BF082}.Dev|x86.ActiveCfg = Dev|x86
+		{66D625DB-C5A0-4A81-9143-6C0A881BF082}.Dev|x86.Build.0 = Dev|x86
+		{66D625DB-C5A0-4A81-9143-6C0A881BF082}.Hybrid DLL|Mixed Platforms.ActiveCfg = Release|x86
+		{66D625DB-C5A0-4A81-9143-6C0A881BF082}.Hybrid DLL|Mixed Platforms.Build.0 = Release|x86
+		{66D625DB-C5A0-4A81-9143-6C0A881BF082}.Hybrid DLL|win32.ActiveCfg = Release|x86
+		{66D625DB-C5A0-4A81-9143-6C0A881BF082}.Hybrid DLL|x86.ActiveCfg = Release|x86
+		{66D625DB-C5A0-4A81-9143-6C0A881BF082}.Hybrid DLL|x86.Build.0 = Release|x86
+		{66D625DB-C5A0-4A81-9143-6C0A881BF082}.Release|Mixed Platforms.ActiveCfg = Release|x86
+		{66D625DB-C5A0-4A81-9143-6C0A881BF082}.Release|Mixed Platforms.Build.0 = Release|x86
+		{66D625DB-C5A0-4A81-9143-6C0A881BF082}.Release|win32.ActiveCfg = Release|x86
+		{66D625DB-C5A0-4A81-9143-6C0A881BF082}.Release|x86.ActiveCfg = Release|x86
+		{66D625DB-C5A0-4A81-9143-6C0A881BF082}.Release|x86.Build.0 = Release|x86
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
