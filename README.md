@@ -7,3 +7,4 @@ GUI Editor plugin for Project Anarchy
 3.Create Scene
 4.Create UI -> Dialog Shape
 
+![ui_editor](https://cloud.githubusercontent.com/assets/2046900/8049454/706760a6-0e9a-11e5-83dd-363342992042.png)
