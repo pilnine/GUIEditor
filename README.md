@@ -1,7 +1,8 @@
 # GUIEditor
 GUI Editor plugin for Project Anarchy
 
-2014.1.1 Anarchy
+For 2014.1.1 Anarchy
+
 1.Build Solution
 
 2.Run vForge
